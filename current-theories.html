@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="A website outlining the utility of symmetry within fundamental theoretical physics.">
+    <meta name="author" content="Dominic Danks">
+    <link rel="icon" href="img/favicon.ico">
+
+    <title>Current Theories</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Next statement taken from bootstrap docs -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Static navbar from the bootstrap docs -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./background.html">Background</a></li>
+            <li class="current"><a href="./current-theories.html">Current Theories</a></li>
+            <li><a href="./future.html">Future Possibilities</a></li>
+            <li><a href="./references.html">References</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="subpage-header">
+      <div class="site-heading">
+        <h1>Current Theories</h1>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 text-center left-col">
+          <h2>Quantum Electrodynamics</h2>
+          <p>
+            Quantum Electrodynamics (QED) is the quantum theory of the electromagnetic interaction. It was developed by many leading physicists
+            of the mid twentieth century, including Nobel Laureate and well-known character Richard Feynman, pictured below.
+          </p>
+          <img class="img-responsive center-block img-rounded" src="img/feynman.jpg" alt="Richard Feynman Image" title="Image Credit: http://cerncourier.com/cws/article/cern/50796" width="250">
+          <!-- http://cerncourier.com/cws/article/cern/50796 -->
+          <p>
+            The symmetry associated with QED is a local U(1) symmetry<a href="./references.html#current-theories-1">[1]</a>. This represents the fact that if the wavefunction of a given particle
+            is multiplied by a complex number of modulus unity and a space-time dependent phase, then the physics is unchanged. However, this
+            is only true if a field is introduced to compensate for the space-time dependence of the transformation. In the case of the U(1)
+            symmetry, only one field is required and this is the electromagnetic field. The mathematical details also describe how this field interacts and this leads to the full theory of QED,
+            within which the field becomes quantised and electromagnetic interactions are described by the exchange of virtual photons. These interactions
+            are displayed in Feynman diagrams, an example of which is shown in figure 1 below. To learn more about the meaning of this diagram, begin with the
+            wikipedia page for the Feynman diagram <a href="https://en.wikipedia.org/wiki/Feynman_diagram">here</a>.
+          </p>
+          <img class="img-responsive center-block img-rounded" src="img/examplefeynmandiagram.png" alt="Example Feynman Diagram Image" title="Image Credit: http://www.quantumdiaries.org/wp-content/uploads/2012/01/qed_ep_tChannel.png" width="300">
+          <!-- http://www.quantumdiaries.org/wp-content/uploads/2012/01/qed_ep_tChannel.png -->
+          <div class="img-caption">Figure 1: A Feynman diagram showing the interaction of an electron with its antiparticle via the electromagnetic interaction.</div>
+          <p>
+            The special thing about U(1) transformations is that the order in which they are carried out does not matter. In mathematical terms this means that the U(1)
+            group is abelian. This makes the dynamics of this field inherently simpler than would be the case for a non-abelian group. The most
+            important effect associated with this is the fact that photons do not interact with each other<a href="./references.html#current-theories-1">[1]</a> which allows the electromagnetic force to have infinite range, as observed in nature.
+          </p>
+        </div>
+        <div id="QCD" class="col-lg-4 text-center centre-col">
+          <h2>Quantum Chromodynamics</h2>
+          <p>
+            Quantum Chromodynamics is the quantum theory describing the strong interaction. It is this interaction which is responsible for binding together
+            quarks into composite hadronic particles and in turn binding together nuclei. The development of this theory was motivated by the inconsistency of
+            the existence of the &Delta;<sup>++</sup> baryon, which was believed to contain three up quarks with parallel spins<a href="./references.html#current-theories-2">[2]</a>. Another quantum number was needed to
+            prevent violation of the Pauli exclusion principle and was given the name "colour".
+          </p>
+          <img class="img-responsive center-block img-circle" src="img/quark.png" alt="Quarks Image" title="Image Credit: https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Quark_structure_neutron.svg/2000px-Quark_structure_neutron.svg.png" width="180">
+          <!-- https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Quark_structure_neutron.svg/2000px-Quark_structure_neutron.svg.png -->
+          <div class="img-caption">Figure 2: The quark structure of the neutron.</div>
+          <p>
+            It was then proposed that there are three kinds of colour, namely red, blue and green, with particles such as the neutron above consisting of combinations of coloured quarks. Furthermore, the strong interaction should not
+            be dependent on the colour that a particular state has. There is then a symmetry associated with this colour property which is described mathematically
+            by a local SU(3) symmetry. Just as in QED, for this local symmetry to be respected, one must introduce a field with particular properties. In QCD, due
+            to the higher order of the symmetry, eight fields are required and these are quantised to represent the eight particles which mediate the interaction.
+            These mediating gauge bosons are known as gluons and are denoted by spring-like objects in Feynman diagrams, labelled by g in the diagram below.
+          </p>
+          <img class="img-responsive center-block img-rounded" src="img/gluon.png" alt="Gluon Feynman Diagram Image" title="Image Credit: https://i.stack.imgur.com/V5BeY.png" width="320">
+          <!-- https://i.stack.imgur.com/V5BeY.png -->
+          <div class="img-caption">Figure 3: Feynman diagram showing the representation of quarks, labelled by g.</div>
+          <p>
+            As SU(3) is a non-abelian group, the properties of the interaction are more intricate than the electromagnetic interaction. Most notably, quarks themselves
+            carry colour and are therefore self-interacting, unlike the photons of QED. This leads to some very rich behaviour of the strong force. For example, at low
+            energies, the force does not decrease with separation of quarks and so new quark-antiquark pairs are created rather than the quarks becoming separated and
+            isolated. This explains why isolated quarks do not exist in nature<a href="./references.html#current-theories-3">[3]</a>.
+          </p>
+        </div>
+        <div class="col-lg-4 text-center right-col">
+          <h2>The Weak Interaction</h2>
+          <p>
+            The final interaction explained satisfactorily by quantum gauge theories is the weak interaction. This is capable of changing the type
+            or "flavour" of particles. For example, radioactive &beta;<sup>-</sup> decay is caused by the weak interaction converting a neutron into a proton and emitting an electron and anti-neutrino
+            as shown below. It is important to note that the weak interaction differs from the strong and electromagnetic interactions in a significant way as the gauge bosons which carry
+            the weak interaction have mass. This is what leads to the incredibly short range of the weak force<a href="./references.html#current-theories-4">[4]</a>.
+          </p>
+          <img id="beta" class="img-responsive center-block img-rounded" src="img/betadecay.png" alt="Beta Decay Image" title="Image Credit: https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Beta-minus_Decay.svg/240px-Beta-minus_Decay.svg.png" width="280">
+          <!-- https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Beta-minus_Decay.svg/240px-Beta-minus_Decay.svg.png -->
+          <div class="img-caption">Figure 4: A schematic representation of the &beta;<sup>-</sup> decay process.</div>
+          <p>
+            Once again, the weak force is based on symmetry. In this case, the symmetry describes the way in which certain pairs of (negative chirality) particles couple to the weak force. To parametrise
+            this, the quantum number "weak isospin" is introduced, with particles having the same weak isospin paired into doublets.
+            For example, the left-handed electron and its neutrino have a weak isospin of a half and will be paired up due to their equivalent behaviour with respect to the weak interaction.
+            This symmetry is described by an SU(2) gauge symmetry and requires the introduction
+            of three gauge fields. When quantised, these fields go on to describe the three gauge bosons of the weak interaction, known as
+            the W<sup>+</sup>, W<sup>-</sup> and Z bosons. There is a subtlety here however, as the generated fields of the SU(2) gauge symmetry do not alone describe the Z boson. To generate the Z boson, the electromagnetic interaction
+            must be unified with the weak force in a theory known as electroweak theory<a href="./references.html#current-theories-5">[5]</a>.
+          </p>
+          <p>
+            The W<sup>+</sup> and W<sup>-</sup> are capable of changing the flavour of particles, as is done in the &beta;<sup>-</sup> decay process described above. They are the only two gauge bosons capable of this action.
+            Interactions involving the Z boson are known as "weak neutral current" interactions and are not capable of a change of flavour<a href="./references.html#current-theories-6">[6]</a>. Below is a Feynman diagram showing the scattering of an electron neutrino from an electron via
+            the weak neutral current, where it is seen that there is no flavour change.
+          </p>
+          <img class="img-responsive center-block img-rounded" src="img/weakneutralcurrent.jpg" alt="Weak Neutral Current Image" title="Image Credit: http://philschatz.com/physics-book/contents/m42680.html" width="240">
+          <!-- http://philschatz.com/physics-book/contents/m42680.html -->
+          <div class="img-caption">Figure 5: Feynman diagram for electron-neutrino scattering via the weak neutral current.</div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid">
+					<hr>
+          <p class="copyright">Copyright &copy; Dominic Danks 2017</p>
+        </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <!-- Bootstrap Plugins -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- Fix the hover effect on the navbar toggle button on touch devices -->
+    <script src="javascripts/navbar_button_hover.js"></script>
+  </body>
+</html>

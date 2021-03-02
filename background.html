@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="A website outlining the utility of symmetry within fundamental theoretical physics.">
+    <meta name="author" content="Dominic Danks">
+    <link rel="icon" href="img/favicon.ico">
+
+    <title>Background</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Next statement taken from bootstrap docs -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Static navbar from the bootstrap docs -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="./index.html">Home</a></li>
+            <li class="current"><a href="./background.html">Background</a></li>
+            <li><a href="./current-theories.html">Current Theories</a></li>
+            <li><a href="./future.html">Future Possibilities</a></li>
+            <li><a href="./references.html">References</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="subpage-header">
+      <div class="site-heading">
+        <h1>Background</h1>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 text-center left-col">
+          <h2>What is a Symmetry in Physics?</h2>
+          <p>
+            We begin the discussion of symmetry in familiar territory, namely that of the equilateral triangle.
+            If we rotate the equilateral triangle about its centre by 120&deg; in any direction it looks exactly the same.
+            In other words, there is no way of telling the difference between the triangle before a 120&deg; rotation and after
+            a 120&deg; rotation. We could therefore say that the equilateral triangle possesses a discrete rotational symmetry.
+            To see this in action, try out the animation below which rotates the triangle clockwise by 120&deg; when the button is clicked.
+            If the coloured circles were absent, there would be no way of telling that the rotation has happened.
+          </p>
+          <div id="animation-container">
+          </div>
+          <button type="button" id="animation-button" class="btn btn-default">Click to rotate</button>
+          <p>
+            In the context of physics, a symmetry means that there is an element of freedom given to the physicist when considering a system.
+            For example, if we ignore the rest of the universe and just consider the Earth orbiting the Sun, then it doesn't change anything
+            if we rotate the system. In this sense, the Earth-Sun system possesses a continuous rotational symmetry.
+          </p>
+          <img class="img-responsive center-block img-rounded" src="img/earth-sun.jpg" alt="Earth-Sun System Image" title="Image Credit: http://7-themes.com/6933169-earth-solar-system.html" width="300">
+          <!-- http://7-themes.com/6933169-earth-solar-system.html -->
+          <div class="img-caption">
+            Figure 1: The Earth-Sun system. When considered in isolation, this possesses a continuous rotational symmetry.
+          </div>
+          <p>
+            The previous two examples describe global symmetries. These are symmetries which require the same transformation to be made at all points.
+            However, there is another type of symmetry, known as a local symmetry, which requires a different transformation at different points in space-time.
+            In order to see the difference between a global and a local transformation, see figure 2 below, in which the effect
+            of a global and a local rotation are compared.
+            This is a more abstract concept, however is of great utility, as will be explained in due course.
+          </p>
+          <img class="img-responsive center-block img-rounded" src="img/localvsglobal.jpg" alt="Image Comparing Local and Global Transformations" title="Image Credit: https://universe-review.ca/I15-04-gauge2.jpg" width="300">
+          <!-- https://universe-review.ca/I15-04-gauge2.jpg -->
+          <div class="img-caption">Figure 2: This figure shows the significantly different consequences of global and local transformations.</div>
+          <p>
+            Now that we have seen what we mean by symmetry in physics, we can move on to why it might be useful.
+          </p>
+        </div>
+        <div class="col-lg-6 text-center right-col">
+          <h2>Why is Symmetry Useful?</h2>
+          <img id="emmy" class="img-responsive center-block img-circle" src="img/noether.png" alt="Emmy Noether Image" title="Image Credit: https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Noether_%28petite_image%29.png/180px-Noether_%28petite_image%29.png" width="140">
+          <!-- https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Noether_%28petite_image%29.png/180px-Noether_%28petite_image%29.png -->
+          <div class="img-caption">Figure 3: Celebrated mathematician Emmy Noether (1882-1935).</div>
+          <p>
+            There are two main reasons why physicists are so fond of symmetry. The first involves the use of Noether's theorem, named
+            after the famous mathematician Emmy Noether, pictured above. Loosely, this states that wherever there is a symmetry, there is a corresponding
+            conserved quantity, that is a quantity whose value is constant over time<a href="./references.html#background-1">[1]</a>. In the previous example of the Earth-Sun system, rotational symmetry implies the conservation of angular
+            momentum.
+          </p>
+          <p>
+            The other main utility of a symmetry is that it can often be described through the use of a mathematical construct called a group.
+            For example, the group representing all rotations in 3-D space is known as the SO(3) group<a href="./references.html#background-2">[2]</a>. Therefore, if a system possesses complete
+            rotational symmetry in 3-D, it is said to possess an SO(3) symmetry. Thanks to the extensive efforts of mathematicians, the properties of these groups are well understood
+            and these can be exploited to make further physical predictions.
+          </p>
+          <p>
+            To see how this might work, we can look at how symmetry applies to the strong nuclear force. In this case, there is a symmetry between the proton
+            and neutron, in the sense that they are (approximately) indistinguishable in their interactions with the strong force.
+            Mathematically this is described by an SU(2) symmetry and from this, we can use group theory to predict the existence of many more sets of particles, each with similar properties.
+            Furthermore, group theory even tells us that these particles appear in sets of certain sizes and these sets are known as multiplets. In the case of SU(2), these sizes are given by
+            (2j + 1), with j an integer or half integer<a href="./references.html#background-3">[3]</a>.
+          </p>
+          <p>
+            If we take this symmetry further and incorporate the quark model, then we can say that the strong interaction is approximately the same for all three quarks
+            and hence there is a global SU(3) flavour symmetry<a href="./references.html#background-4">[4]</a>. In this case, the multiplets take on a more complicated structure. One of these multiplets is the baryon
+            octet and is shown in the figure below. The position of the particle in this plot is due to the value of particular quantum numbers assigned to it. The importance
+            here is the grouping of the particles into well-defined multiplets, with the structure dependent on the symmetry group involved.
+          </p>
+          <img id="octet" class="img-responsive center-block" src="img/baryon_octet.png" alt="Baryon Octet Image" title="Image Credit: https://inspirehep.net/record/1208557/plots" width="250">
+          <!-- https://inspirehep.net/record/1208557/plots -->
+          <div class="img-caption">Figure 4: The light baryons of spin one half form the baryon octet.</div>
+          <p>
+            This may seem like a highly presumptious way of working, but these multiplets of particles have indeed been observed in nature, a testament to the power
+            of the link between mathematics and physics.
+          </p>
+          <p>
+            The above properties apply to both global and local symmetries, however if there exists a local symmetry we can gain even more insight. More precisely, when mathematically
+            asserting a local symmetry for a system, we require the introduction of a field. This field appears in order to maintain the form of the equations under the local
+            transformation and has to have very particular properties in order to successfully do this. These properties then tell us how this field behaves in the presence of matter
+            and allows us to make predictions which can be experimentally verified. A theory of this form possesses a property called gauge invariance in order to ensure the preservation
+            of the relevant equations under the local transformation and is therefore known as a gauge theory. Furthermore, when quantum mechanics is applied to a theory of this form,
+            the fields are quantised and interactions are represented by the exchange of the gauge boson of that field type.
+          </p>
+          <p>
+            The fundamental theories underpinning elementary particle physics are theories of this form and are detailed further in the <a href="./current-theories.html">current theories</a> section.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid">
+					<hr>
+          <p class="copyright">Copyright &copy; Dominic Danks 2017</p>
+        </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <!-- Bootstrap Plugins -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Animation -->
+    <script src="javascripts/two.min.js"></script>
+    <script src="javascripts/triangle.js"></script>
+    <!-- Fix the hover effect on the navbar toggle button on touch devices -->
+    <script src="javascripts/navbar_button_hover.js"></script>
+  </body>
+</html>

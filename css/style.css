@@ -1,0 +1,312 @@
+/*!
+ * IE10 viewport hack for Surface/desktop Windows 8 bug
+ * Copyright 2014-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*
+ * See the Getting Started docs for more information:
+ * http://getbootstrap.com/getting-started/#support-ie10-width
+ */
+@-ms-viewport     { width: device-width; }
+@-o-viewport      { width: device-width; }
+@viewport         { width: device-width; }
+
+
+
+/* Global styling
+-------------------------------------------------- */
+html {
+  height: 100%;
+}
+
+body {
+  position: relative; /* Allows footer to be positioned absolutely w.r.t the body */
+  max-width: 2560px;
+  margin: 0 auto;
+  padding-bottom: 132px; /* Stops footer overlaying content on small screens */
+  min-height: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+@media (min-width: 1201px) and (max-width: 1920px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1921px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+
+
+a:hover {
+  color: goldenrod;
+}
+
+
+/* Header styling
+-------------------------------------------------- */
+/* Take up the full width of the page with horizontal bars */
+.container-fluid {
+  padding: 0;
+}
+
+/* Header classes */
+.site-header, .subpage-header {
+  width: 100%;
+  height: 250px;
+  background-color: #0a6051;
+}
+
+/* More space if it is on a page which is just a set of links to subpages */
+.site-header {
+  margin-bottom: 5%;
+}
+
+/* Horizontally and vertically centre the heading */
+.site-heading {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+
+
+
+
+/* Navbar styling
+-------------------------------------------------- */
+/* Join navbar straight to the header */
+.navbar-static-top {
+  margin-bottom: 0px;
+  border: 0;
+  background-color: #000000;
+}
+
+/* White writing for the links in the navbar */
+.navbar-nav > li > a {
+  color: #ffffff !important;
+}
+
+/* Centre the writing in the dropdown menu when collapsed */
+#navbar ul {
+  text-align: center;
+}
+
+/* When the navbar is not collapsed, centre the links */
+@media (min-width: 768px) {
+  .navbar-nav {
+    display: block;
+    float: none;
+  }
+  .navbar-nav > li {
+    display: inline-block;
+    float: none;
+  }
+}
+
+/* Colour in the part of the navbar corresponding to the current page */
+.current {
+  background-color: #0a6051;
+}
+
+/* Remove bootstrap's hover colouring on the navbar toggle button.
+This is added manually in the navbar js script. */
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: transparent !important;
+}
+
+/* Way to apply the hover effect through changing the background in js */
+.navbar-default .navbar-toggle {
+  -webkit-transition: background-color .1s linear;
+  transition: background-color .1s linear;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* When navbar is toggled open, give button relevant colour.
+This is the only effect applied on touch devices. */
+.navbar-default .navbar-toggle:not(.collapsed) {
+  background-color: #ddd !important;
+}
+
+
+
+
+/* Homepage styling
+-------------------------------------------------- */
+.container.categories {
+  margin-top: 20px;
+}
+
+/* On larger screens, use absolute positioning relative to the body to position the category
+   container when the row isn't collapsed and vary header size with vh. */
+@media (min-height: 1000px) and (min-width: 1200px) {
+  div.container.categories {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 55vh;
+    -webkit-transform: translate(-50%,0);
+    transform: translate(-50%,0);
+  }
+  .site-header {
+    margin: 0;
+    height: 45vh
+  }
+  .subpage-header {
+    height: 40vh
+  }
+}
+/* Center align the text within the three columns below the carousel */
+.categories .col-lg-4 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.categories h2 {
+  font-weight: normal;
+}
+
+.categories .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.btn.btn-default {
+  background-color: #0a6051;
+  color: #ffffff;
+}
+
+.home-caption {
+  margin-bottom: 20px;
+}
+
+
+
+
+/* Columns styling
+-------------------------------------------------- */
+/* Separate columns and add vertical line separator via a border
+if columns are not collapsed */
+@media (min-width: 1200px) {
+
+.right-col {
+  border-left: 2px solid #0a6051;
+  padding-left: 30px;
+}
+
+.left-col {
+  padding-right: 30px;
+}
+
+.centre-col {
+  border-left: 2px solid #0a6051;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#QCD {
+  padding-bottom: 7.7em;
+}
+
+}
+
+
+/* Animation styling
+-------------------------------------------------- */
+#animation-button {
+  margin-bottom: 20px;
+  outline: none;
+}
+
+
+
+
+/* Image styling
+-------------------------------------------------- */
+.img-rounded {
+  margin-bottom: 10px;
+}
+
+#emmy {
+  margin-bottom: 10px;
+}
+
+#octet {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#beta {
+  margin-bottom: 20px;
+}
+
+.img-caption {
+  margin: 0 auto 15px;
+  width: 290px;
+  max-width: 100%;
+}
+
+
+
+/* Reference styling
+-------------------------------------------------- */
+.reference-heading {
+  margin-bottom: 35px;
+
+}
+
+.reference {
+  margin-bottom: 20px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.overline {
+  text-decoration: overline;
+}
+
+#future-reference {
+  padding-bottom: 10.9em;
+}
+
+@media(min-width: 1200px) {
+  .image-credits {
+    margin-top: 50px;
+  }
+}
+
+
+
+/* Footer styling
+-------------------------------------------------- */
+hr {
+  margin: 10px;
+}
+
+/* Pin the footer to the bottom */
+footer {
+  background-color: #000000;
+  padding: 15px 0 25px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.copyright {
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-top: 0.6em;
+  color: #ffffff;
+}
